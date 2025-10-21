@@ -16,8 +16,7 @@
   "editable": true,
   "gnetId": 2115,
   "graphTooltip": 0,
-  "id": 32,
-  "iteration": 1622621007137,
+  "iteration": 1761072335499,
   "links": [],
   "panels": [
     {
@@ -107,7 +106,7 @@
         "showThresholdMarkers": true,
         "text": {}
       },
-      "pluginVersion": "7.5.16",
+      "pluginVersion": "7.5.42",
       "targets": [
         {
           "expr": "sum(rate(node_cpu_seconds_total{mode=~\"system|user|irq|softirq\", node=~\"$Node\"}[$__rate_interval])) / sum(kube_node_status_capacity{resource=\"cpu\", unit=\"core\", node=~\"$Node\"}) * 100",
@@ -195,7 +194,7 @@
         "showThresholdMarkers": true,
         "text": {}
       },
-      "pluginVersion": "7.5.16",
+      "pluginVersion": "7.5.42",
       "targets": [
         {
           "expr": "sum((node_memory_MemTotal_bytes{node=~\"$Node\"} - node_memory_MemAvailable_bytes{node=~\"$Node\"}) / node_memory_MemTotal_bytes{node=~\"$Node\"}) * 100",
@@ -253,7 +252,7 @@
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "7.5.16",
+      "pluginVersion": "7.5.42",
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
@@ -383,7 +382,7 @@
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "7.5.16",
+      "pluginVersion": "7.5.42",
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
@@ -517,7 +516,7 @@
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "7.5.16",
+      "pluginVersion": "7.5.42",
       "pointradius": 5,
       "points": false,
       "renderer": "flot",
@@ -633,7 +632,7 @@
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "7.5.16",
+      "pluginVersion": "7.5.42",
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
@@ -759,7 +758,7 @@
         "alertThreshold": false
       },
       "percentage": false,
-      "pluginVersion": "7.5.16",
+      "pluginVersion": "7.5.42",
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
@@ -892,7 +891,7 @@
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "7.5.16",
+      "pluginVersion": "7.5.42",
       "pointradius": 5,
       "points": false,
       "renderer": "flot",
@@ -1016,7 +1015,7 @@
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "7.5.16",
+      "pluginVersion": "7.5.42",
       "pointradius": 5,
       "points": false,
       "renderer": "flot",
@@ -1317,8 +1316,8 @@
         "allValue": ".*",
         "current": {
           "selected": false,
-          "text": "ip-10-250-12-170.eu-west-1.compute.internal",
-          "value": "ip-10-250-12-170.eu-west-1.compute.internal"
+          "text": "ip-10-180-155-95.eu-west-1.compute.internal",
+          "value": "ip-10-180-155-95.eu-west-1.compute.internal"
         },
         "datasource": "prometheus",
         "definition": "",
@@ -1348,7 +1347,6 @@
         "allValue": null,
         "current": {
           "selected": true,
-          "tags": [],
           "text": [
             "Ready"
           ],
